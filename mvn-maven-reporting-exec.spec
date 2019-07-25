@@ -4,12 +4,14 @@
 #
 Name     : mvn-maven-reporting-exec
 Version  : 1.4
-Release  : 2
+Release  : 3
 URL      : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.2/maven-reporting-exec-1.2.jar
 Source2  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.2/maven-reporting-exec-1.2.pom
-Source3  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.pom
+Source3  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.3/maven-reporting-exec-1.3.jar
+Source4  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.3/maven-reporting-exec-1.3.pom
+Source5  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -40,8 +42,14 @@ cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/report
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.2
 cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.2
 
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.3
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.3
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.3
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.3
+
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.4
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.4
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.4
 
 
 %files
@@ -51,5 +59,7 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/report
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.2/maven-reporting-exec-1.2.jar
 /usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.2/maven-reporting-exec-1.2.pom
+/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.3/maven-reporting-exec-1.3.jar
+/usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.3/maven-reporting-exec-1.3.pom
 /usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.jar
 /usr/share/java/.m2/repository/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.pom
