@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-reporting-exec
 Version  : 1.4
-Release  : 3
+Release  : 4
 URL      : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.jar
 Source0  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.4/maven-reporting-exec-1.4.jar
 Source1  : https://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-exec/1.2/maven-reporting-exec-1.2.jar
